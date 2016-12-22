@@ -15,8 +15,12 @@ payload = {
   '_' : '时间戳(毫秒)'
 }
 ```
-
+###请求
+Get方式请求API地址,需传递Cookie:`BAIDUID`字段
+###BAIDUID Cookie获取方法
+访问百度(*.baidu.com) 任意页面，从Responses Header中读取名为`BAIDUID`的Cookie
 ###返回结果
+
 JSON格式
 ```
 {
@@ -43,5 +47,6 @@ JSON格式
       "_source_com":"yunda",       #数据来源公司
       "_support_from":"partner"    #没几把用
     }
+  }
 }
 ```
