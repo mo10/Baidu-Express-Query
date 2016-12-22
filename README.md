@@ -1,7 +1,7 @@
 # Baidu Express Query API
 百度快递运单号查询接口
 
-该接口为百度搜索页快递100提供的接口,几乎可以自动识别和查询所有的快递单号
+该接口为百度搜索页快递100提供的接口,可以自动识别和查询快递单号归属公司和快递运输动态
 ### 接口地址
 `https://sp0.baidu.com/9_Q4sjW91Qh3otqbppnN2DJv/pae/channel/data/asyncqury`
 ### 参数(GET)
@@ -16,7 +16,8 @@ payload = {
 }
 ```
 ###请求
-Get方式请求API地址,需传递Cookie:`BAIDUID`字段
+Get方式请求接口地址,传递payload
+注意:请求需要Cookie中包含`BAIDUID`字段
 ###BAIDUID Cookie获取方法
 访问百度(*.baidu.com) 任意页面，从Responses Header中读取名为`BAIDUID`的Cookie
 ###返回结果
