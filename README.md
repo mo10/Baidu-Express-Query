@@ -35,10 +35,10 @@ JSON格式
      "source":{...},         #数据来源
      "kuaidiSource":{...},   #快递接口来源
     "info":{
-      "status":"1",           #查询状态?
+      "status":"1",           #0:无结果,1:成功,2:失败
       "com":"yunda",          #快递公司英文
-      "state":"0",            #签收状态?
-      "context":{
+      "state":"0",            #0:在途,1:揽件2:疑难,3:签收,4:退签,5:派件,6:退回
+      "context":{
         {
           "time":"1482000831",      #快递动态发生 时间戳
           "desc":"在X,即将发往：X"   #发生事件描述
@@ -46,7 +46,7 @@ JSON格式
         {...}
       },
       "_source_com":"yunda",       #数据来源公司
-      "_support_from":"partner"    #没几把用
+      "_support_from":"partner"    #没JB用
     }
   }
 }
