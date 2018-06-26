@@ -15,12 +15,12 @@ payload = {
   '_' : '时间戳(毫秒)'
 }
 ```
-###请求
+### 请求
 Get方式请求接口地址,传递payload
 注意:请求需要Cookie中包含`BAIDUID`字段
-###BAIDUID Cookie获取方法
+### BAIDUID Cookie获取方法
 访问百度(*.baidu.com) 任意页面，从Responses Header中读取名为`BAIDUID`的Cookie
-###返回结果
+### 返回结果
 
 JSON格式
 ```
